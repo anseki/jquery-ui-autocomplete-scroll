@@ -1,4 +1,6 @@
 
+(function($, undefined) {
+
 $.widget('ui.autocomplete', $.ui.autocomplete, {
   _resizeMenu: function() {
     var ul, lis, ulW, barW;
@@ -22,3 +24,5 @@ $.widget('ui.autocomplete', $.ui.autocomplete, {
     ));
   }
 });
+
+}(jQuery));
