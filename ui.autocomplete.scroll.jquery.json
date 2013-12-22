@@ -6,7 +6,7 @@
     "ui",
     "autocomplete",
     "scroll",
-    "items list"
+    "list"
   ],
   "version": "0.1.0",
   "author": {
@@ -24,6 +24,7 @@
   "docs": "http://anseki.github.io/jquery-ui-autocomplete-scroll/",
   "download": "http://anseki.github.io/jquery-ui-autocomplete-scroll/",
   "dependencies": {
-    "jquery.ui": ">=1.10.3"
+    "jquery": ">=1.6",
+    "jquery.ui": ">=1.9"
   }
 }
