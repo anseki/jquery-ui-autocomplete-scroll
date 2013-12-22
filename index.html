@@ -11,6 +11,12 @@ My GitHub Page
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
+<link rel="stylesheet" type="text/css" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/blitzer/jquery-ui.css" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/path/to/jquery.ui.autocomplete.scroll.js"></script>
+
+
     <title>Scrollable jQuery UI Autocomplete</title>
   </head>
 
@@ -54,6 +60,27 @@ CSS <code>max-height</code>, <code>overflow-y</code> and <code>padding-right</co
   <span class="nx">source</span><span class="o">:</span> <span class="nx">list1</span>
 <span class="p">});</span>
 </pre></div>
+
+<div style="margin: 5px 0 10px; padding: 20px; background-color: #ccc;">
+<input type="text" value="" id="txt1" style="width: 50px;"> Type "abcdefgh", clear, type "abcx".
+</div>
+<script>
+$('#txt1').autocomplete({
+  maxShowItems: 5,
+  source: [
+    'ab',
+    'abc',
+    'abcd',
+    'abcde',
+    'abcdef',
+    'abcdefg',
+    'abcdefgh',
+    'abcx',
+    'abcx2',
+    'abcx3'
+  ]
+});
+</script>
 
 <h2>
 <a name="release-history" class="anchor" href="#release-history"><span class="octicon octicon-link"></span></a>Release History</h2>
