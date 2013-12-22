@@ -1,22 +1,13 @@
-# jquery-ui-autocomplete-scroll
+# Scrollable jQuery UI Autocomplete
 
-Scrollable jQuery UI Autocomplete for long item list.  
-CSS `max-height`, `overflow-y` and `padding-right` can make scrollable list easy. But that is not beautiful.
-
-[Demo](http://jsfiddle.net/7PzVz/)
+Scrollable jQuery UI Autocomplete Plugin for long items list.  
+CSS `max-height`, `overflow-y` and `padding-right` can make scrollable list easy. But that is not beautiful. This plugin calculate with items and height of it.  
+**See <a href="http://anseki.github.io/jquery-ui-autocomplete-scroll">DEMO</a>**
 
 ## Usage
 
-Load the `jquery.ui.autocomplete.scroll.js` script file after loading `jquery.ui.autocomplete.js` etc.
-
-```html
-<link rel="stylesheet" type="text/css" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/blitzer/jquery-ui.css" />
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script><!-- jquery.ui.autocomplete.js is included -->
-<script type="text/javascript" src="/path/to/jquery.ui.autocomplete.scroll.js"></script>
-```
-
-The `maxShowItems` is added to Autocomplete options. It accept the number of items which is max height of item list.
+- Load the `jquery.ui.autocomplete.scroll.js` script file after loading `jquery.ui.autocomplete.js` etc.
+- The `maxShowItems` is added to Autocomplete options. It accept the number of items which is max height of items list.
 
 ## Example
 
@@ -26,3 +17,6 @@ $('#txt1').autocomplete({
   source: list1
 });
 ```
+
+## Release History
+ * 2013-10-19			v0.1.0			Initial release.
