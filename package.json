@@ -1,5 +1,5 @@
 {
-  "name": "ui.autocomplete.scroll",
+  "name": "jquery-ui.autocomplete.scroll",
   "version": "0.1.2",
   "title": "Scrollable jQuery UI Autocomplete",
   "description": "Scrollable jQuery UI Autocomplete Plugin for long items list.",
