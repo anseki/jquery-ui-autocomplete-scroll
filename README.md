@@ -18,5 +18,5 @@ $('#txt1').autocomplete({
 });
 ```
 
-## Release History
+## History
  * 2013-10-19			v0.1.0			Initial release.
