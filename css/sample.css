@@ -1,0 +1,17 @@
+
+#sample-01-wrap {
+  margin: 10px 0 200px;
+  padding: 20px;
+}
+
+#sample-01-wrap ol {
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: top;
+}
+
+#sample-01 {
+  width: 50px;
+  vertical-align: top;
+}
+

@@ -1,94 +1,83 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Scrollable jQuery UI Autocomplete Plugin for long items list.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/syntax.css">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/blitzer/jquery-ui.css" />
+  <link rel="stylesheet" href="css/sample.css">
+  <!-- Libs for sample codes must be loaded in "head". -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+  <script src="js/jquery.ui.autocomplete.scroll.min.js"></script>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Scrollable jQuery UI Autocomplete : Scrollable jQuery UI Autocomplete Plugin for long items list." />
+  <title>Scrollable jQuery UI Autocomplete</title>
+</head>
+<body>
+  <header>
+    <h1><a href="./">Scrollable<br>jQuery UI Autocomplete</a></h1>
+    <ul id="gh"><li><a href="https://github.com/anseki/jquery-ui-autocomplete-scroll/tarball/master">Download TAR.GZ</a></li><li><a href="https://github.com/anseki/jquery-ui-autocomplete-scroll/zipball/master">Download ZIP</a></li><li><a href="https://github.com/anseki/jquery-ui-autocomplete-scroll">View on GitHub</a></li></ul>
+  </header>
+  <main>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+<p>Scrollable jQuery UI Autocomplete Plugin for long items list.<br>CSS <code>max-height</code>, <code>overflow-y</code> and <code>padding-right</code> can make scrollable list easy. But that is not beautiful. This plugin calculate with items and height of it.  </p>
 
-<link rel="stylesheet" type="text/css" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/blitzer/jquery-ui.css" />
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-<script src="javascripts/jquery.ui.autocomplete.scroll.min.js"></script>
-
-
-    <title>Scrollable jQuery UI Autocomplete</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/anseki/jquery-ui-autocomplete-scroll">View on GitHub</a>
-
-          <h1 id="project_title">Scrollable jQuery UI Autocomplete</h1>
-          <h2 id="project_tagline">Scrollable jQuery UI Autocomplete Plugin for long items list.</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/anseki/jquery-ui-autocomplete-scroll/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/anseki/jquery-ui-autocomplete-scroll/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-
-<p>Scrollable jQuery UI Autocomplete Plugin for long items list.<br>
-CSS <code>max-height</code>, <code>overflow-y</code> and <code>padding-right</code> can make scrollable list easy. But that is not beautiful. This plugin calculate with items and height of it.</p>
-
-<h2>
-<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+<h2 id="usage">Usage</h2>
 
 <ul>
 <li>Load the <code>jquery.ui.autocomplete.scroll.min.js</code> script file after loading <code>jquery.ui.autocomplete.js</code> etc.</li>
 <li>The <code>maxShowItems</code> is added to Autocomplete options. It accept the number of items which is max height of items list.</li>
-</ul><h2>
-<a name="example" class="anchor" href="#example"><span class="octicon octicon-link"></span></a>Example</h2>
+</ul>
 
-<div class="highlight highlight-js"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'#txt1'</span><span class="p">).</span><span class="nx">autocomplete</span><span class="p">({</span>
+<h2 id="example">Example</h2>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#txt1&#39;</span><span class="p">).</span><span class="nx">autocomplete</span><span class="p">({</span>
   <span class="nx">maxShowItems</span><span class="o">:</span> <span class="mi">5</span><span class="p">,</span> <span class="c1">// Make list height fit to 5 items when items are over 5.</span>
   <span class="nx">source</span><span class="o">:</span> <span class="nx">list1</span>
 <span class="p">});</span>
-</pre></div>
-
-<div style="margin: 5px 0 100px; padding: 20px; background-color: #ccc;">
-<input type="text" value="" id="txt1" style="width: 50px;"> Type "abcdefgh", clear, type "abcx".
+</code></pre></div>
+<!-- include "sample_01.html" -->
+<!-- ================ sample -->
+<div id="sample-01-wrap">
+  <ol>
+    <li>Type <code>abcdefgh</code></li>
+    <li>Clear</li>
+    <li>Type <code>abcx</code></li>
+  </ol>
+  <input type="text" value="" id="sample-01">
 </div>
+
 <script>
-$('#txt1').autocomplete({
-  maxShowItems: 5,
-  source: [
-    'ab',
-    'abc',
-    'abcd',
-    'abcde',
-    'abcdef',
-    'abcdefg',
-    'abcdefgh',
-    'abcx',
-    'abcx2',
-    'abcx3'
-  ]
+$(function() {
+
+  $('#sample-01').autocomplete({
+    maxShowItems: 5,
+    source: [
+      'ab',
+      'abc',
+      'abcd',
+      'abcde',
+      'abcdef',
+      'abcdefg',
+      'abcdefgh',
+      'abcx',
+      'abcx2',
+      'abcx3'
+    ]
+  });
+
 });
 </script>
+<!-- ================ /sample -->
+<!-- /include "sample_01.html" -->
 
-      </section>
-    </div>
+  </main>
+  <footer>
+    <p class="copyright">Scrollable jQuery UI Autocomplete maintained by <a href="https://github.com/anseki">anseki</a></p>
+  </footer>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Scrollable jQuery UI Autocomplete maintained by <a href="https://github.com/anseki">anseki</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+</body>
 </html>
