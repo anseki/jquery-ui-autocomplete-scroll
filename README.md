@@ -17,6 +17,3 @@ $('#txt1').autocomplete({
   source: list1
 });
 ```
-
-## History
- * 2013-10-19			v0.1.0			Initial release.
