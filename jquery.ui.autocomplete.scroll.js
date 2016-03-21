@@ -2,7 +2,7 @@
  * Scrollable jQuery UI Autocomplete
  * https://github.com/anseki/jquery-ui-autocomplete-scroll
  *
- * Copyright (c) 2015 anseki
+ * Copyright (c) 2016 anseki
  * Licensed under the MIT license.
  */
 
@@ -14,6 +14,7 @@ $.widget('ui.autocomplete', $.ui.autocomplete, {
     var ul, lis, ulW, barW;
     if (isNaN(this.options.maxShowItems)) { return; }
     ul = this.menu.element
+      .scrollLeft(0).scrollTop(0) // Reset scroll position
       .css({overflowX: '', overflowY: '', width: '', maxHeight: ''}); // Restore
     lis = ul.children('li').css('whiteSpace', 'nowrap');
 
