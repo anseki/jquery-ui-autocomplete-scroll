@@ -2,7 +2,7 @@
 
 Scrollable jQuery UI Autocomplete Plugin for long items list.  
 CSS `max-height`, `overflow-y` and `padding-right` can make scrollable list easy. But that is not beautiful. This plugin calculate with items and height of it.  
-**See <a href="http://anseki.github.io/jquery-ui-autocomplete-scroll">DEMO</a>**
+**See <a href="http://anseki.github.io/jquery-ui-autocomplete-scroll/">DEMO</a>**
 
 ## Usage
 
