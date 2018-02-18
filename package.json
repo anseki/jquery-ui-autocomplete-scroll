@@ -11,6 +11,13 @@
     "scroll",
     "list"
   ],
+  "main": "jquery.ui.autocomplete.scroll.min.js",
+  "files": [
+    "jquery.ui.autocomplete.scroll.min.js",
+    "bower.json",
+    "ui.autocomplete.scroll.jquery.json",
+    "LICENSE-MIT"
+  ],
   "dependencies": {
     "jquery": ">=1.6",
     "jquery-ui": ">=1.9"
