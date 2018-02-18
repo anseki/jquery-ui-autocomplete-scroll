@@ -1,6 +1,6 @@
 /*
  * Scrollable jQuery UI Autocomplete
- * https://github.com/anseki/jquery-ui-autocomplete-scroll
+ * http://anseki.github.io/jquery-ui-autocomplete-scroll/
  *
  * Copyright (c) 2016 anseki
  * Licensed under the MIT license.
