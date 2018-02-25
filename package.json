@@ -13,6 +13,7 @@
   ],
   "main": "jquery.ui.autocomplete.scroll.min.js",
   "files": [
+    "jquery.ui.autocomplete.scroll.js",
     "jquery.ui.autocomplete.scroll.min.js",
     "bower.json",
     "ui.autocomplete.scroll.jquery.json",
